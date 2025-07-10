@@ -6,7 +6,6 @@
     @save="editSaveForm"
     @cancel="navigateCancelForm"
   />
-
   <v-snackbar v-model="snackbar.show" :color="snackbar.color" :timeout="3000">
     {{ snackbar.message }}
     <template v-slot:actions>

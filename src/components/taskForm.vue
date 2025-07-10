@@ -62,9 +62,9 @@ const taskEstimatedTime = ref<string>("");
 const actualName = ref<string>("");
 const actualTime = ref<string>("");
 
-const isModified = computed(() => {
-  return task.value !== actualName.value || taskEstimatedTime.value !== actualTime.value;
-});
+const isModified = computed(
+  () => task.value !== actualName.value || taskEstimatedTime.value !== actualTime.value
+);
 
 watch(
   () => props.taskData,
