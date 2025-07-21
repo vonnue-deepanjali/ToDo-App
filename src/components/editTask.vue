@@ -17,9 +17,9 @@
 <script setup lang="ts">
 import { ref } from vue
 import { useRouter } from "vue-router";
-import { useTaskStore } from "@/stores/task";
-import TaskForm from "./TaskForm.vue";
 import type { Snackbar } from '@/type/snackbar';
+import TaskForm from "./TaskForm.vue";
+import { useTaskStore } from "@/stores/task";
 
 const taskStore = useTaskStore();
 const router = useRouter();
